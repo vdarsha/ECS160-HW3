@@ -5,10 +5,13 @@ cd HW3-Micro-A
 mvn clean install
 mvn spring-boot:run &
 
+cd ..
+
 # Compile and start the second microservice
 cd HW3-Micro-B
 mvn clean install 
 mvn spring-boot:run &
+cd ..
 
 # Compile and launch the main app
 cd HW3-main
