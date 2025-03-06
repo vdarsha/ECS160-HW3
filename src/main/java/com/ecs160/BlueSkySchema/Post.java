@@ -21,6 +21,15 @@ public class Post {
     @PersistableField
     private String dateTime;
 
+    public Boolean getBlocked() {
+        return blocked;
+    }
+
+    public void setBlocked(Boolean blocked) {
+        this.blocked = blocked;
+    }
+
+    private Boolean blocked;
     /*
      * The maximum size of a BlueSky post is 300 characters and 8 hashtags
      * https://www.sprinklr.com/help/articles/bluesky/publish-a-post-using-bluesky/671b8e772e64c74e572386fa#
